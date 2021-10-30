@@ -1,5 +1,5 @@
-<a><img src="Images/FluentSpeech.png" align="center" height="30%" width="30%" hspace="10"></a>
-<a><img src="Images/StutteredSpeech.png" align="center" height="30%" width="30%" hspace="10"></a>
+<a><img src="Images/FluentSpeechPhone.png" align="center" height="30%" width="30%" hspace="10"></a>
+<a><img src="Images/StutteredSpeechPhone.png" align="center" height="30%" width="30%" hspace="10"></a>
 
 # StutterAI
 
