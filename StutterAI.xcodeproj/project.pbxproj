@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50A6B35270BEA8300E789E1 /* StutterAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B34270BEA8300E789E1 /* StutterAIApp.swift */; };
+		B50A6B37270BEA8300E789E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B36270BEA8300E789E1 /* ContentView.swift */; };
+		B50A6B39270BEA8400E789E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50A6B38270BEA8400E789E1 /* Assets.xcassets */; };
+		B50A6B3C270BEA8400E789E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50A6B3B270BEA8400E789E1 /* Preview Assets.xcassets */; };
+		B50A6B46270BEA8400E789E1 /* StutterAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B45270BEA8400E789E1 /* StutterAITests.swift */; };
+		B50A6B50270BEA8400E789E1 /* StutterAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B4F270BEA8400E789E1 /* StutterAIUITests.swift */; };
+		B50A6B52270BEA8400E789E1 /* StutterAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B51270BEA8400E789E1 /* StutterAIUITestsLaunchTests.swift */; };
+		B50A6B5F270BEAC700E789E1 /* StutterDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B5E270BEAC700E789E1 /* StutterDetector.mlmodel */; };
+		B50A6B61270BEADC00E789E1 /* StutterDetectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B60270BEADC00E789E1 /* StutterDetectorView.swift */; };
+		B50A6B65270BED7A00E789E1 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B64270BED7A00E789E1 /* AudioEngine.swift */; };
+		B50A6B67270CC5E200E789E1 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6B66270CC5E200E789E1 /* RecordButtonView.swift */; };
+		B50A6BE5270D4B1500E789E1 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6BE4270D4B1500E789E1 /* SpeechRecognizer.swift */; };
+		B50A6BE9270E022A00E789E1 /* Color-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6BE8270E022A00E789E1 /* Color-Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B50A6B42270BEA8400E789E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B50A6B29270BEA8300E789E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50A6B30270BEA8300E789E1;
+			remoteInfo = StutterAI;
+		};
+		B50A6B4C270BEA8400E789E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B50A6B29270BEA8300E789E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50A6B30270BEA8300E789E1;
+			remoteInfo = StutterAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B50A6B31270BEA8300E789E1 /* StutterAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StutterAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50A6B34270BEA8300E789E1 /* StutterAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StutterAIApp.swift; sourceTree = "<group>"; };
+		B50A6B36270BEA8300E789E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B50A6B38270BEA8400E789E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B50A6B3B270BEA8400E789E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B50A6B41270BEA8400E789E1 /* StutterAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StutterAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50A6B45270BEA8400E789E1 /* StutterAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StutterAITests.swift; sourceTree = "<group>"; };
+		B50A6B4B270BEA8400E789E1 /* StutterAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StutterAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50A6B4F270BEA8400E789E1 /* StutterAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StutterAIUITests.swift; sourceTree = "<group>"; };
+		B50A6B51270BEA8400E789E1 /* StutterAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StutterAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B50A6B5E270BEAC700E789E1 /* StutterDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StutterDetector.mlmodel; sourceTree = "<group>"; };
+		B50A6B60270BEADC00E789E1 /* StutterDetectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StutterDetectorView.swift; sourceTree = "<group>"; };
+		B50A6B64270BED7A00E789E1 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		B50A6B66270CC5E200E789E1 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		B50A6BE4270D4B1500E789E1 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		B50A6BE8270E022A00E789E1 /* Color-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color-Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B50A6B2E270BEA8300E789E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A6B3E270BEA8400E789E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A6B48270BEA8400E789E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50A6B28270BEA8300E789E1 = {
+			isa = PBXGroup;
+			children = (
+				B50A6B33270BEA8300E789E1 /* StutterAI */,
+				B50A6B44270BEA8400E789E1 /* StutterAITests */,
+				B50A6B4E270BEA8400E789E1 /* StutterAIUITests */,
+				B50A6B32270BEA8300E789E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B50A6B32270BEA8300E789E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6B31270BEA8300E789E1 /* StutterAI.app */,
+				B50A6B41270BEA8400E789E1 /* StutterAITests.xctest */,
+				B50A6B4B270BEA8400E789E1 /* StutterAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B50A6B33270BEA8300E789E1 /* StutterAI */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6B34270BEA8300E789E1 /* StutterAIApp.swift */,
+				B50A6B36270BEA8300E789E1 /* ContentView.swift */,
+				B50A6B60270BEADC00E789E1 /* StutterDetectorView.swift */,
+				B50A6B66270CC5E200E789E1 /* RecordButtonView.swift */,
+				B50A6BE7270E020A00E789E1 /* Audio */,
+				B50A6BE6270E020300E789E1 /* Extensions */,
+				B50A6B5E270BEAC700E789E1 /* StutterDetector.mlmodel */,
+				B50A6B38270BEA8400E789E1 /* Assets.xcassets */,
+				B50A6B3A270BEA8400E789E1 /* Preview Content */,
+			);
+			path = StutterAI;
+			sourceTree = "<group>";
+		};
+		B50A6B3A270BEA8400E789E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6B3B270BEA8400E789E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B50A6B44270BEA8400E789E1 /* StutterAITests */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6B45270BEA8400E789E1 /* StutterAITests.swift */,
+			);
+			path = StutterAITests;
+			sourceTree = "<group>";
+		};
+		B50A6B4E270BEA8400E789E1 /* StutterAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6B4F270BEA8400E789E1 /* StutterAIUITests.swift */,
+				B50A6B51270BEA8400E789E1 /* StutterAIUITestsLaunchTests.swift */,
+			);
+			path = StutterAIUITests;
+			sourceTree = "<group>";
+		};
+		B50A6BE6270E020300E789E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6BE8270E022A00E789E1 /* Color-Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B50A6BE7270E020A00E789E1 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				B50A6B64270BED7A00E789E1 /* AudioEngine.swift */,
+				B50A6BE4270D4B1500E789E1 /* SpeechRecognizer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B50A6B30270BEA8300E789E1 /* StutterAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50A6B55270BEA8400E789E1 /* Build configuration list for PBXNativeTarget "StutterAI" */;
+			buildPhases = (
+				B50A6B2D270BEA8300E789E1 /* Sources */,
+				B50A6B2E270BEA8300E789E1 /* Frameworks */,
+				B50A6B2F270BEA8300E789E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StutterAI;
+			productName = StutterAI;
+			productReference = B50A6B31270BEA8300E789E1 /* StutterAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B50A6B40270BEA8400E789E1 /* StutterAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50A6B58270BEA8400E789E1 /* Build configuration list for PBXNativeTarget "StutterAITests" */;
+			buildPhases = (
+				B50A6B3D270BEA8400E789E1 /* Sources */,
+				B50A6B3E270BEA8400E789E1 /* Frameworks */,
+				B50A6B3F270BEA8400E789E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B50A6B43270BEA8400E789E1 /* PBXTargetDependency */,
+			);
+			name = StutterAITests;
+			productName = StutterAITests;
+			productReference = B50A6B41270BEA8400E789E1 /* StutterAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B50A6B4A270BEA8400E789E1 /* StutterAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50A6B5B270BEA8400E789E1 /* Build configuration list for PBXNativeTarget "StutterAIUITests" */;
+			buildPhases = (
+				B50A6B47270BEA8400E789E1 /* Sources */,
+				B50A6B48270BEA8400E789E1 /* Frameworks */,
+				B50A6B49270BEA8400E789E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B50A6B4D270BEA8400E789E1 /* PBXTargetDependency */,
+			);
+			name = StutterAIUITests;
+			productName = StutterAIUITests;
+			productReference = B50A6B4B270BEA8400E789E1 /* StutterAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B50A6B29270BEA8300E789E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B50A6B30270BEA8300E789E1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B50A6B40270BEA8400E789E1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B50A6B30270BEA8300E789E1;
+					};
+					B50A6B4A270BEA8400E789E1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B50A6B30270BEA8300E789E1;
+					};
+				};
+			};
+			buildConfigurationList = B50A6B2C270BEA8300E789E1 /* Build configuration list for PBXProject "StutterAI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B50A6B28270BEA8300E789E1;
+			productRefGroup = B50A6B32270BEA8300E789E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50A6B30270BEA8300E789E1 /* StutterAI */,
+				B50A6B40270BEA8400E789E1 /* StutterAITests */,
+				B50A6B4A270BEA8400E789E1 /* StutterAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B50A6B2F270BEA8300E789E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50A6B3C270BEA8400E789E1 /* Preview Assets.xcassets in Resources */,
+				B50A6B39270BEA8400E789E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A6B3F270BEA8400E789E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A6B49270BEA8400E789E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50A6B2D270BEA8300E789E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50A6BE5270D4B1500E789E1 /* SpeechRecognizer.swift in Sources */,
+				B50A6B61270BEADC00E789E1 /* StutterDetectorView.swift in Sources */,
+				B50A6B37270BEA8300E789E1 /* ContentView.swift in Sources */,
+				B50A6B65270BED7A00E789E1 /* AudioEngine.swift in Sources */,
+				B50A6B67270CC5E200E789E1 /* RecordButtonView.swift in Sources */,
+				B50A6BE9270E022A00E789E1 /* Color-Extensions.swift in Sources */,
+				B50A6B5F270BEAC700E789E1 /* StutterDetector.mlmodel in Sources */,
+				B50A6B35270BEA8300E789E1 /* StutterAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A6B3D270BEA8400E789E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50A6B46270BEA8400E789E1 /* StutterAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50A6B47270BEA8400E789E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50A6B52270BEA8400E789E1 /* StutterAIUITestsLaunchTests.swift in Sources */,
+				B50A6B50270BEA8400E789E1 /* StutterAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B50A6B43270BEA8400E789E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50A6B30270BEA8300E789E1 /* StutterAI */;
+			targetProxy = B50A6B42270BEA8400E789E1 /* PBXContainerItemProxy */;
+		};
+		B50A6B4D270BEA8400E789E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50A6B30270BEA8300E789E1 /* StutterAI */;
+			targetProxy = B50A6B4C270BEA8400E789E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B50A6B53270BEA8400E789E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B50A6B54270BEA8400E789E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B50A6B56270BEA8400E789E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StutterAI/Preview Content\"";
+				DEVELOPMENT_TEAM = T8PATWK92J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to analyze and transcribe your speech. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech Recognition is required to transcribe your voice.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benk.assytrack.StutterAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B50A6B57270BEA8400E789E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StutterAI/Preview Content\"";
+				DEVELOPMENT_TEAM = T8PATWK92J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to analyze and transcribe your speech. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech Recognition is required to transcribe your voice.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benk.assytrack.StutterAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B50A6B59270BEA8400E789E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PATWK92J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benk.assytrack.StutterAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StutterAI.app/StutterAI";
+			};
+			name = Debug;
+		};
+		B50A6B5A270BEA8400E789E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PATWK92J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benk.assytrack.StutterAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StutterAI.app/StutterAI";
+			};
+			name = Release;
+		};
+		B50A6B5C270BEA8400E789E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PATWK92J;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benk.assytrack.StutterAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StutterAI;
+			};
+			name = Debug;
+		};
+		B50A6B5D270BEA8400E789E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T8PATWK92J;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benk.assytrack.StutterAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StutterAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B50A6B2C270BEA8300E789E1 /* Build configuration list for PBXProject "StutterAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50A6B53270BEA8400E789E1 /* Debug */,
+				B50A6B54270BEA8400E789E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50A6B55270BEA8400E789E1 /* Build configuration list for PBXNativeTarget "StutterAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50A6B56270BEA8400E789E1 /* Debug */,
+				B50A6B57270BEA8400E789E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50A6B58270BEA8400E789E1 /* Build configuration list for PBXNativeTarget "StutterAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50A6B59270BEA8400E789E1 /* Debug */,
+				B50A6B5A270BEA8400E789E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50A6B5B270BEA8400E789E1 /* Build configuration list for PBXNativeTarget "StutterAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50A6B5C270BEA8400E789E1 /* Debug */,
+				B50A6B5D270BEA8400E789E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B50A6B29270BEA8300E789E1 /* Project object */;
+}
